@@ -1,6 +1,6 @@
-# ** Pesquisa DAO + JDBC + MySQL **
+# **Pesquisa DAO + JDBC + MySQL**
 
-- ## ** 1. O que é DAO? **
+- ## **1. O que é DAO?**
 
 O padrão DAO (Data Access Object) é um padrão de projeto estrutural 
 que abstrai e encapsula todas as interações com o banco de dados em 
@@ -8,7 +8,7 @@ uma camada dedicada. Ou seja, ele separa em classes DAO tudo aquilo
 que pertence ao banco, como as operações CRUD, e permite acessá-las 
 de forma organizada.
 
-- ## ** Por que usar DAO? **
+- ### **Por que usar DAO?**
 
 Em um sistema sem DAO, como o projeto Teatro, todas as alterações 
 feitas durante a execução do programa eram perdidas ao fechar, pois 
@@ -17,7 +17,7 @@ esse problema, pois permite que os dados sejam salvos e manipulados
 de forma persistente. O DAO encapsula esse acesso, adicionando 
 segurança e organização ao código.
 
-## Benefícios do DAO
+### **Benefícios do DAO**
 
 - **Desacoplamento:** a lógica do código e dos processos dentro do 
 sistema não muda mesmo mudando a base de dados. Os processos 
@@ -33,7 +33,7 @@ na classe DAO, o que facilita a manutenção, adição de conteúdo e
 correção de problemas, já que tudo fica em um lugar específico 
 e organizado.
 
-## 2. Ciclo de vida da conexão JDBC
+## **2. Ciclo de vida da conexão JDBC**
 
 O JDBC (Java Database Connectivity) é uma API do Java que possibilita 
 que uma aplicação consiga acessar um banco de dados local ou remoto. 
@@ -54,7 +54,7 @@ passando URL, usuário e senha
 5. **Processar ResultSet:** percorre os resultados retornados pelo `SELECT`
 6. **Fechar conexão:** libera os recursos para não vazar memória
 
-## 3. SQL Injection e PreparedStatement
+## **3. SQL Injection e PreparedStatement**
 
 SQL Injection é uma técnica de ataque onde o invasor injeta comandos 
 SQL por meio de formulários ou campos de entrada, tentando executar 
@@ -70,7 +70,7 @@ maliciosos no banco.
 
 ---
 
-### Como o PreparedStatement resolve isso?
+### **Como o PreparedStatement resolve isso?**
 
 Quando o SQL é montado juntando strings, o usuário pode digitar 
 caracteres especiais como `'` e fazer o banco interpretar o que 
@@ -102,7 +102,7 @@ stmt.setString(1, nome);
 ---
 
 
-## 5. Fontes
+## **5. Fontes**
 
 1. JavaThinking — O que é DAO em Java  
    - https://www.javathinking.com/
